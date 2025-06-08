@@ -18,9 +18,14 @@ end
 
 -- Menangkap input tombol E untuk mengaktifkan mode 2
 userInputService.InputBegan:Connect(function(input, gameProcessed)
-    if not gameProcessed and input.KeyCode == Enum.KeyCode.E then
-        mode = 2
-        print("Mode 2 diaktifkan melalui tombol E!")
+    if not gameProcessed then
+        if input.KeyCode == Enum.KeyCode.E then
+            mode = 2
+            print("Mode 2 diaktifkan!")
+        elseif input.KeyCode == Enum.KeyCode.R then
+            mode = 0
+            print("Mode dinonaktifkan!")
+        end
     end
 end)
 
