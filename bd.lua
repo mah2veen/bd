@@ -1,5 +1,5 @@
 -- Memuat script utama
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxer228s/TimGUI/main/Main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxer228s/DeathBall/refs/heads/main/main.lua"))()
 
 local userInputService = game:GetService("UserInputService")
 local attach = true
